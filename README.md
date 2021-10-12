@@ -2,7 +2,11 @@
 
 This is a project to check connectivity of Redis in different cloud environments.
 
-This application shows configuration of a Connection Factory for Redis using Lettuce and not Jedis. The reason for choosing Lettuce
+The project's Docker Image consist of two applications to test redis.
+1. Spring Data Redis Application
+2. `redis-cli` Redis client with `--tls` support without the need for additional certificates.
+
+The spring application shows configuration of a Connection Factory for Redis using Lettuce and not Jedis. The reason for choosing Lettuce
 is that Jedis currently has no support for Master/Slave mode of Redis. Jedis only supports
 Redis Cluster Mode and Redis Sentinel Mode. While these work in most cases AWS follows a
 master slave model. Refer the Spring Redis document **[Spring Data Redis: Redis
