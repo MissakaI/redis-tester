@@ -84,10 +84,23 @@ spring:
     mode: master_replica
 ```
 
-## Redis-CLI usage
+## Usage
+
+### Redis-CLI
 
 To use the `redis-cli` access the interactive pod console using
 
     kubectl exec <pod_name> -it -- /bin/bash
+
+### Spring Application
+
+The application is provided with a Swagger UI which you can execute the API.
+
+To the access the swagger UI first get EXTERNAL-IP of the service by
+    
+    kubectl get service redis-tester
+
+Then access the swagger through `<EXTERNAL-IP>/redis-tester/swagger-ui/`
+
 
 [1]: https://docs.spring.io/spring-data/redis/docs/2.5.5/reference/html/#redis:connectors:connection
