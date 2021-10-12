@@ -3,10 +3,10 @@ kind      : ConfigMap
 metadata  :
   name: redis-tester
 data      :
-  REDIS_HOST: master.uat-bolt-redis.n9wkga.apse1.cache.amazonaws.com
+  REDIS_HOST: master.xxxxxx.cache.amazonaws.com
   REDIS_PORT: '6379'
-  REDIS_PASSWORD: oG6doU9dsoZNU9UG
-  REDIS_NODES: replica.uat-bolt-redis.n9wkga.apse1.cache.amazonaws.com:6379
+  REDIS_PASSWORD: xxxxxx
+  REDIS_NODES: replica.xxxxxx.cache.amazonaws.com:6379
   REDIS_SSL: true
   REDIS_MODE: master_replica
   SERVER_PORT: 8080

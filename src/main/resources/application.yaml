@@ -2,19 +2,12 @@
 
 spring:
   redis:
-#    host    : ${REDIS_HOST:redis-13432.c1.asia-northeast1-1.gce.cloud.redislabs.com}
-#    port    : ${REDIS_PORT:13432}
-#    password: ${REDIS_PASSWORD:xrV8stxu1CnI5hFt9ZL4JkoQxJY2vs5Y}
-#    cluster:
-#      nodes: redis-13432.c1.asia-northeast1-1.gce.cloud.redislabs.com:13432
-#    ssl    : true
-#    mode: master_replica
-    host: ${REDIS_HOST:master.uat-bolt-redis.n9wkga.apse1.cache.amazonaws.com}
+    host: ${REDIS_HOST:master.xxxxxx.cache.amazonaws.com}
     port    : ${REDIS_PORT:6379}
     username: ${REDIS_USERNAME:default}
-    password: ${REDIS_PASSWORD:oG6doU9dsoZNU9UG}
+    password: ${REDIS_PASSWORD:xxxxxx}
     cluster :
-      nodes: ${REDIS_NODES:replica.uat-bolt-redis.n9wkga.apse1.cache.amazonaws.com:6379}
+      nodes: ${REDIS_NODES:replica.xxxxxx.cache.amazonaws.com:6379}
     ssl     : ${REDIS_SSL:true}
     mode: ${REDIS_MODE:master_replica}
 
