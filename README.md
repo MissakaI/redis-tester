@@ -84,4 +84,10 @@ spring:
     mode: master_replica
 ```
 
+## Redis-CLI usage
+
+To use the `redis-cli` access the interactive pod console using
+
+    kubectl exec <pod_name> -it -- /bin/bash
+
 [1]: https://docs.spring.io/spring-data/redis/docs/2.5.5/reference/html/#redis:connectors:connection
