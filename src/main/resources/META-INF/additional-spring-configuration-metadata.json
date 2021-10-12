@@ -1,0 +1,10 @@
+{
+  "properties": [
+    {
+      "name": "spring.redis.mode",
+      "type": "com.missakai.redistester.config.RedisMode",
+      "description": "Select the desired Redis Mode from MASTER_SLAVE, CLUSTER, STANDALONE.",
+      "defaultValue": "STANDALONE"
+    }
+  ]
+}
